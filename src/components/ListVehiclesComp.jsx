@@ -11,6 +11,7 @@ class ListVehiclesComp extends Component {
 		}
 
 		this.addVehicle = this.addVehicle.bind(this);
+		this.updateVehicle = this.updateVehicle.bind(this);
 	}
 
 	componentDidMount() {
@@ -21,7 +22,12 @@ class ListVehiclesComp extends Component {
 
 	addVehicle() {
 		this.props.history.push('/add');
-    }
+	}
+
+	updateVehicle(id) {
+		this.props.history.push(`/getSingleVehicle/${id}`);
+	}
+
 	render() {
 		return (
 			<div>
@@ -58,6 +64,9 @@ class ListVehiclesComp extends Component {
 											<td> {vehicle.tirePressure}</td>
 											<td> {vehicle.wheels}</td>
 											<td> {vehicle.batteryOrFuel}</td>
+											<td>
+												<button onClick={() => this.updateVehicle(vehicle.id)} className="btn btn-info">Update</button>
+											</td>
 										</tr>
 								)
 							}
