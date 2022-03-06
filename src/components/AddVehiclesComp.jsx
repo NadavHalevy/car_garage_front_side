@@ -98,12 +98,12 @@ class AddVehiclesComp extends Component {
 											value={this.state.modelName} onChange={this.changeModelNameHandler} />
 									</div>
 									<div className="form-group">
-										<label>Energy Percentage</label>
+										<label>Energy Percentage - Max 100</label>
 										<input placeholder="Energy Percentage" name="energyPercentage" className="form-control"
 											value={this.state.energyPercentage} onChange={this.changeEnergyPercentageHandler} />
 									</div>
 									<div className="form-group">
-										<label>Tire Pressure</label>
+										<label>Tire Pressure - Max 40</label>
 										<input placeholder="Tire Pressure" name="tirePressure" className="form-control"
 											value={this.state.tirePressure} onChange={this.changeTirePressureHandler} />
 									</div>

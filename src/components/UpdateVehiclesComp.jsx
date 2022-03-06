@@ -1,3 +1,4 @@
+import { Box } from '@material-ui/core';
 import React, { Component } from 'react'
 import VehiclesService from '../services/VehiclesService';
 
@@ -103,32 +104,32 @@ class UpdateVehiclesComp extends Component {
 									</div>
 									<div className="form-group">
 										<label>Vehicle Type  - regular/electric motorcycle/car && truck</label>
-										<input placeholder="Vehicle Type" name="vehicleType" className="form-control"
+										<Box placeholder="Vehicle Type" name="vehicleType" className="form-control"
 											value={this.state.vehicleType} onChange={this.changeVehicleTypeHandler} />
 									</div>
 									<div className="form-group">
 										<label>Model Name - Nissan/Mercedes/Suzuki/Audi/Other..</label>
-										<input placeholder="Model Name" name="modelName" className="form-control"
+										<Box placeholder="Model Name" name="modelName" className="form-control"
 											value={this.state.modelName} onChange={this.changeModelNameHandler} />
 									</div>
 									<div className="form-group">
-										<label>Energy Percentage</label>
+										<label>Energy Percentage - Max 100</label>
 										<input placeholder="Energy Percentage" name="energyPercentage" className="form-control"
 											value={this.state.energyPercentage} onChange={this.changeEnergyPercentageHandler} />
 									</div>
 									<div className="form-group">
-										<label>Tire Pressure</label>
+										<label>Tire Pressure - Max 40</label>
 										<input placeholder="Tire Pressure" name="tirePressure" className="form-control"
 											value={this.state.tirePressure} onChange={this.changeTirePressureHandler} />
 									</div>
 									<div className="form-group">
 											<label>Wheels- motorcycle: 2 , car: 4, or truck: 16</label>
-											<input placeholder="Wheels" name="wheels" className="form-control"
+											<Box placeholder="Wheels" name="wheels" className="form-control"
 												value={this.state.wheels} onChange={this.changeWheelsHandler} />
 									</div>
 									<div className="form-group">
 											<label>Battery Or Fuel</label>
-											<input placeholder="BatteryOrFuel" name="batteryOrFuel" className="form-control"
+											<Box placeholder="BatteryOrFuel" name="batteryOrFuel" className="form-control"
 												value={this.state.batteryOrFuel} onChange={this.changebatteryOrFuelHandler} />
 									</div>
 								

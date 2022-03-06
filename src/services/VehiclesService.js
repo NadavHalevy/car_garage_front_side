@@ -27,8 +27,6 @@ class VehiclesService {
     updateVehicle(vehicle, id) {
         return axios.put(UPDATE_VEHICLE_BASE_URL + "/" + id, vehicle);
     }
-
-
 }
 
 export default new VehiclesService();
